@@ -65,7 +65,7 @@ if not "con_trigram" in app_state:
         trigram = st.text_input(label='Utilisez votre trigramme',max_chars=3,key="trigram")
         trigram = trigram.upper()
         
-        with st.beta_expander("Explications"):
+        with st.beta_expander("Comment est constitué votre trigramme ?"):
             st.write("Votre **trigramme**, c'est la première lettre de votre prénom, suivie des deux premières de votre nom. Par exemple, **L**uke **Sk**ywalker donne **LSK**")
     
     login_ok = False
