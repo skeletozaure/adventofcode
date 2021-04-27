@@ -11,6 +11,7 @@ import os.path
 import pandas as pd  
 import matplotlib.pyplot as plt
 import streamlit as st
+from PIL import Image
 
 
 def app():
@@ -33,6 +34,9 @@ def app():
         st.pyplot(fig)
     
     # %%
+    image = Image.open('logo.png')
+    st.image(image)
+    
     st.title("Bienvenue dans Advent Of Code !")
     
     
@@ -44,12 +48,14 @@ def app():
     
     Chaque puzzle n'a qu'**une seule solution**. Libre à vous de choisir quel moyen vous allez utiliser pour la trouver. L'idéal est de faire un court programme (*quel que soit votre langage favori*),  mais encore fois, seul le résultat compte pour déverrouiller l'étape suivante. 
     
-    L'objectif est de **s'amuser et d'apprendre** en même temps. Profitez en pour apprendre un nouveau langage, Python, Java, Powershell, C# , VB.net,  Javascript, C++, ce n'est pas le choix qui manque ! Vous n'êtes même pas obligé d'installer quoi que ce soit sur votre machine, il y a de nombreux compilateurs / éditeurs en ligne :
+    L'objectif est de **s'amuser et d'apprendre** en même temps. Profitez en pour apprendre un nouveau langage, Python, Java, Powershell, C# , VB.net, COBOL, Javascript, C++, ce n'est pas le choix qui manque ! Vous n'êtes même pas obligé d'installer quoi que ce soit sur votre machine, il y a de nombreux compilateurs / éditeurs en ligne :
     
      - [Python avec repl.it](https://replit.com/)
      - [VB.net et C# avec Netfiddle](https://dotnetfiddle.net/)
      - [Javascript avec Playcode.io](https://playcode.io)
      - [C et C++ avec Onlinegdb](https://www.onlinegdb.com/online_c++_compiler)
+     - [COBOL avec Tutoralspoint](https://www.tutorialspoint.com/compile_cobol_online.php)
+     
     """)
     
     # Récupére les paramétres sur l'URL

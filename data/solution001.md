@@ -1,4 +1,4 @@
-Si vous souhaitez passer au puzzle suivant, rafraichissez la page avec F5
+Si vous souhaitez passer au puzzle suivant, rafraichissez la page avec F5.
 
 Si vous souhaitez que **votre solution** soit ajoutée, vous pouvez me l'envoyer par email et je l'ajouterai.
 
